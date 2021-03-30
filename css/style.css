@@ -20,6 +20,13 @@ body {
     
 }
 
+img {
+    width: 100%;
+}
+
+.image {
+    width: 50px;
+}
 /* HEADER */
 header {
     background-color: #fdbc41;
@@ -47,13 +54,71 @@ main {
     font-size: 25px;
 }
 
-.burger-name input:focus {
+.burger-name input:focus,
+.discount input:focus {
     outline: none;
 }
 
 /* Ingredients */
 .ingredients {
     padding: 15px 0;
+    
+}
+
+.ingredient-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.check-row {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    width: 50%;
+}
+
+.check-row label {
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+.check-row label:hover,
+.check-row input:hover,
+.button-calculate button:hover{
+    cursor: pointer;
+}
+
+/* Discount */
+.discount {
+    padding: 15px 0;
+}
+
+.discount label {
+    padding-right: 10px;
+}
+.discount input {
+    width: 70%;
+    background-color: #fff4e2;
+    border: 0;
+    padding: 7px 4px;
+    border-radius: 5px;
+}
+/* Button */
+.button-calculate {
+    text-align: center;
+}
+
+.button-calculate button {
+    padding: 13px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 0;
+    background-color: #fdbc41;
+    border-radius: 5px;
+}
+
+.button-calculate button:focus {
+    background-color:  #fd8c41;
 }
 
 /* FOOTER */
