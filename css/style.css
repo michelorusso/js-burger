@@ -4,3 +4,71 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* COMMON */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    width: 690px;
+    height: 100vh;
+}
+
+.box {
+    padding: 15px 45px;
+    
+}
+
+/* HEADER */
+header {
+    background-color: #fdbc41;
+    height: 85px;
+}
+
+h1 {
+    padding-top: 10px;
+}
+
+/* MAIN */
+main {
+    height: calc( 100% - 80px - 85px );
+    overflow-y: auto;
+}
+
+/* Burger-Name */
+.burger-name {
+    padding-top: 20px
+}
+
+.burger-name input {
+    border: 0;
+    width: 100%;
+    font-size: 25px;
+}
+
+.burger-name input:focus {
+    outline: none;
+}
+
+/* Ingredients */
+.ingredients {
+    padding: 15px 0;
+}
+
+/* FOOTER */
+footer {
+    height: 80px;
+    background-color: #d23359;
+    color: white;
+    font-weight: 600;
+}
+
+.prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 50px;
+}
+
+
