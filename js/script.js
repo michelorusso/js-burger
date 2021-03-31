@@ -19,7 +19,7 @@ buttonCalculate.addEventListener('click', function() {
             var priceSingleIngredient = parseInt(singleIngredients.value);
 
             // sommiamo il prezzo iniziale del burger con il valore degli ingredienti selezionati
-            initialBurgerPrice += priceSingleIngredient;
+            var totalPrice = initialBurgerPrice += priceSingleIngredient;
         }
     }
 
@@ -39,7 +39,7 @@ buttonCalculate.addEventListener('click', function() {
         var thisCode = listCodeDiscount[j];
         
         if (discountCode == thisCode) {
-            initialBurgerPrice = initialBurgerPrice - (initialBurgerPrice * 0.25);
+            totalPrice = totalPrice - (totalPrice * 0.25);
         }
        
     }
@@ -53,6 +53,6 @@ buttonCalculate.addEventListener('click', function() {
     if(nameBurger.value ==  '') {
         alert('Inserisci il nome del tuo Burger!');
     } else {
-        document.getElementById('price').innerHTML = initialBurgerPrice + '$';
+        document.getElementById('price').innerHTML = '$' + totalPrice ;
     }
 });
