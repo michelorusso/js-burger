@@ -103,6 +103,10 @@ main {
     padding: 7px 4px;
     border-radius: 5px;
 }
+
+.discount input:focus {
+    background-color: #fdbc41;
+}
 /* Button */
 .button-calculate {
     text-align: center;

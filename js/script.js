@@ -35,6 +35,17 @@ buttonCalculate.addEventListener('click', function() {
     // altrimenti se il codice è sbagliato risulterà codice sbagliato
     // altrimenti stampo il prezzo normale
     
+    
+     
+    for( var j = 0; j < listCodeDiscount.length; j++) {
+
+        var thisCode = listCodeDiscount[j];
+        
+        if (discountCode == thisCode) {
+            initialBurgerPrice = initialBurgerPrice - (initialBurgerPrice * 0.25);
+        }
+       
+    }
 
     // nameBurger -> salviamo le informzioni riguardanti il nome del burger
     // 
