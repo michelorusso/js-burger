@@ -33,10 +33,7 @@ buttonCalculate.addEventListener('click', function() {
     
     // se il codice da noi inserito è uguale ad uno dei codici nell'array allora ottieni il 25% di sconto
     // altrimenti se il codice è sbagliato risulterà codice sbagliato
-    // altrimenti stampo il prezzo normale
-    
-    
-     
+    // altrimenti stampo il prezzo normale 
     for( var j = 0; j < listCodeDiscount.length; j++) {
 
         var thisCode = listCodeDiscount[j];
