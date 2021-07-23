@@ -20,6 +20,9 @@ buttonCalculate.addEventListener('click', function() {
 
             // sommiamo il prezzo iniziale del burger con il valore degli ingredienti selezionati
             var totalPrice = initialBurgerPrice += priceSingleIngredient;
+        } else {
+            
+            totalPrice = initialBurgerPrice;
         }
     }
 
